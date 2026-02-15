@@ -4,7 +4,9 @@
 <meta charset="UTF-8">
 <meta name="author" content="Harry Undersand">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jeune Transitaire | Transit & Logistique</title>
+<title>Jeune Transitaire | Transit, Douane & Logistique Internationale</title>
+
+<meta name="description" content="Jeune Transitaire est une entreprise spécialisée en dédouanement, transport, import-export et logistique internationale. Solutions rapides, sécurisées et professionnelles.">
 
 <style>
 body {
@@ -17,7 +19,7 @@ body {
 
 .container {
   width: 90%;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -27,6 +29,7 @@ header {
   color: white;
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
 
 header .container {
@@ -43,24 +46,24 @@ nav a {
 }
 
 .hero {
-  background: linear-gradient(135deg, #0d6efd, #0047ab);
+  background: linear-gradient(135deg, #0d6efd, #002b6b);
   color: white;
-  padding: 100px 0;
+  padding: 120px 0;
   text-align: center;
 }
 
 .hero h2 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
 }
 
 .btn {
   display: inline-block;
   background: white;
   color: #0d6efd;
-  padding: 12px 25px;
-  margin-top: 20px;
+  padding: 14px 30px;
+  margin-top: 25px;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 6px;
   font-weight: bold;
   transition: 0.3s;
 }
@@ -70,58 +73,56 @@ nav a {
 }
 
 .section {
-  padding: 70px 0;
+  padding: 80px 0;
 }
 
 .cards {
   display: flex;
-  gap: 20px;
+  gap: 25px;
   flex-wrap: wrap;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .card {
   background: white;
-  padding: 25px;
+  padding: 30px;
   flex: 1;
-  min-width: 250px;
-  border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  min-width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-}
-
-form input, form textarea {
-  width: 100%;
-  padding: 12px;
-  margin: 10px 0;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-button {
-  padding: 12px 20px;
-  background: #0d6efd;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: 0.3s;
-}
-
-button:hover {
-  background: #0047ab;
+  transform: translateY(-8px);
 }
 
 footer {
   background: #111;
   color: white;
-  text-align: center;
-  padding: 25px;
+  padding: 40px 0;
   margin-top: 40px;
+  text-align: center;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 14px 25px;
+  background: #0d6efd;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+button:hover {
+  background: #002b6b;
 }
 </style>
 
@@ -135,8 +136,9 @@ crossorigin="anonymous"></script>
   <div class="container">
     <h1>Jeune Transitaire</h1>
     <nav>
-      <a href="#about">À propos</a>
+      <a href="#about">Entreprise</a>
       <a href="#services">Services</a>
+      <a href="#process">Méthodologie</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
@@ -144,69 +146,124 @@ crossorigin="anonymous"></script>
 
 <section class="hero">
   <div class="container">
-    <h2>Votre partenaire en transit et logistique</h2>
-    <p>Nous facilitons vos opérations douanières et logistiques avec professionnalisme et efficacité.</p>
-    <a href="#contact" class="btn">Nous contacter</a>
+    <h2>Solutions Globales de Transit & Logistique Internationale</h2>
+    <p>
+      Nous accompagnons les entreprises, importateurs et exportateurs dans la gestion
+      complète de leurs opérations douanières et logistiques.
+      Rapidité, conformité réglementaire et sécurité sont au cœur de notre engagement.
+    </p>
+    <a href="#contact" class="btn">Demander un devis</a>
   </div>
 </section>
 
 <section id="about" class="section">
   <div class="container">
-    <h2>À propos de nous</h2>
+    <h2>Notre Entreprise</h2>
     <p>
-      Jeune Transitaire est une entreprise spécialisée dans le dédouanement,
-      l’import-export, le transport et la gestion logistique.
-      Notre mission est de simplifier vos démarches administratives
-      et assurer la sécurité de vos marchandises.
+      Jeune Transitaire est une société spécialisée en transit, dédouanement,
+      transport et conseil logistique international. Nous intervenons dans la
+      gestion des flux commerciaux, la coordination des opérations portuaires,
+      la conformité documentaire et l’optimisation des chaînes d’approvisionnement.
+    </p>
+    <p>
+      Notre mission est de simplifier les procédures administratives et douanières
+      afin de permettre à nos clients de se concentrer sur leur activité principale.
+      Grâce à notre expertise réglementaire et notre réseau de partenaires,
+      nous garantissons un traitement rapide, sécurisé et transparent.
     </p>
   </div>
 </section>
 
-<section id="services" class="section">
+<section id="services" class="section" style="background:#ffffff;">
   <div class="container">
-    <h2>Nos Services</h2>
+    <h2>Nos Services Professionnels</h2>
     <div class="cards">
+
       <div class="card">
-        <h3>Dédouanement</h3>
-        <p>Gestion complète des formalités douanières nationales et internationales.</p>
+        <h3>Dédouanement & Formalités</h3>
+        <p>
+          Gestion complète des déclarations douanières, classification tarifaire,
+          contrôle de conformité, obtention d’autorisations et suivi administratif.
+        </p>
       </div>
+
       <div class="card">
-        <h3>Transport</h3>
-        <p>Transport terrestre sécurisé et suivi de vos marchandises.</p>
+        <h3>Transport & Acheminement</h3>
+        <p>
+          Organisation du transport terrestre, maritime ou aérien,
+          suivi des expéditions et coordination logistique jusqu’à la livraison finale.
+        </p>
       </div>
+
       <div class="card">
-        <h3>Conseil Logistique</h3>
-        <p>Optimisation de vos opérations d’import/export pour réduire vos coûts.</p>
+        <h3>Conseil & Optimisation Logistique</h3>
+        <p>
+          Analyse des coûts, réduction des délais, stratégie import/export,
+          audit logistique et amélioration des performances opérationnelles.
+        </p>
       </div>
+
+      <div class="card">
+        <h3>Gestion Documentaire</h3>
+        <p>
+          Préparation des documents commerciaux, factures, connaissements,
+          certificats d’origine et conformité réglementaire internationale.
+        </p>
+      </div>
+
     </div>
   </div>
 </section>
 
-<section id="contact" class="section">
+<section id="process" class="section">
   <div class="container">
-    <h2>Contact</h2>
+    <h2>Notre Méthodologie</h2>
+    <p>
+      Nous appliquons un processus structuré pour garantir efficacité et fiabilité :
+    </p>
+    <ul>
+      <li>Analyse des besoins et étude du dossier</li>
+      <li>Préparation et vérification documentaire</li>
+      <li>Coordination avec autorités et partenaires</li>
+      <li>Suivi en temps réel de l’expédition</li>
+      <li>Livraison et clôture administrative</li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact" class="section" style="background:#ffffff;">
+  <div class="container">
+    <h2>Contact & Devis</h2>
+    <p>
+      Pour toute demande d’information ou de devis personnalisé,
+      veuillez remplir le formulaire ci-dessous. Notre équipe vous répondra rapidement.
+    </p>
+
     <form id="contactForm">
-      <input type="text" placeholder="Votre nom" required>
-      <input type="email" placeholder="Votre email" required>
-      <textarea placeholder="Votre message" rows="5" required></textarea>
-      <button type="submit">Envoyer</button>
+      <input type="text" placeholder="Nom / Société" required>
+      <input type="email" placeholder="Adresse email" required>
+      <input type="text" placeholder="Type de service recherché">
+      <textarea placeholder="Décrivez votre besoin..." rows="5" required></textarea>
+      <button type="submit">Envoyer la demande</button>
     </form>
   </div>
 </section>
 
+<footer>
+  <p>
+    © 2026 Jeune Transitaire — Développé par 
+    <a href="https://harry-undersand.vercel.app" style="color:#0d6efd;" target="_blank">
+      Harry Undersand
+    </a>
+  </p>
+</footer>
+
 <script>
 document.getElementById("contactForm").addEventListener("submit", function(e) {
   e.preventDefault();
-  alert("Message envoyé avec succès !");
+  alert("Votre demande a été envoyée avec succès. Nous vous répondrons rapidement.");
 });
 </script>
-
-<p style="text-align:center; margin-top:20px;">
-  © 2026 Développé par 
-  <a href="https://harry-undersand.vercel.app" target="_blank">
-    Harry Undersand
-  </a>
-</p>
 
 </body>
 </html>
