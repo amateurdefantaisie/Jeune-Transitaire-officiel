@@ -292,7 +292,24 @@ function makePayment() {
 <script>
 document.getElementById("contactForm").addEventListener("submit", function(e) {
   e.preventDefault();
-  alert("Votre demande a été envoyée avec succès. Nous vous répondrons rapidement.");
+
+  const inputs = this.querySelectorAll("input, textarea");
+
+  const nom = inputs[0].value;
+  const email = inputs[1].value;
+  const service = inputs[2].value;
+  const message = inputs[3].value;
+
+  const texte = 
+  "Nouvelle demande Jeune Transitaire:%0A%0A" +
+  "Nom/Société: " + nom + "%0A" +
+  "Email: " + email + "%0A" +
+  "Service: " + service + "%0A" +
+  "Message: " + message;
+
+  const numero = "242066973413";
+
+  window.open("https://wa.me/" + numero + "?text=" + texte, "_blank");
 });
 </script>
 
