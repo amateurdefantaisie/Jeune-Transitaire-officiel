@@ -263,17 +263,17 @@ function makePayment() {
     tx_ref: "TX-" + Date.now(),
     amount: 10000,
     currency: "XAF",
-    payment_options: "card, mobilemoney, ussd",
+    payment_options: "card, mobilemoney, mobilemoneyfr, ussd",
     customer: {
-      email: "client@email.com",
-      phone_number: "0800000000",
-      name: "Nom Client",
+      email: "jeunetransitaireofficiel@gmail.com",
+      phone_number: "+242064687352",
+      name: "Harry Undersand",
     },
     callback: function (data) {
       console.log(data);
     },
     customizations: {
-      title: "Jeune Transitaire",
+      title: "⚖️ Jeune Transitaire ⚓",
       description: "Paiement service transit",
     },
   });
